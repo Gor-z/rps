@@ -9,3 +9,8 @@ const getComputerChoice = () => {
         return 'Scissors'
     }
 }
+
+const getHumanChoice = () => {
+    let choice = prompt('Chooce: Rock, Paper or Scissors!')
+    return choice.charAt(0).toUpperCase() + choice.slice(1).toLocaleLowerCase();
+}
